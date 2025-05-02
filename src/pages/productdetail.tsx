@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-function SinglePost({ id = 1 }) {
+function productdetail({ id = 1 }) {
   const [post, setPost] = useState(null);
 
   useEffect(() => {
@@ -13,7 +13,7 @@ function SinglePost({ id = 1 }) {
 
   return (
     <div>
-      <h2>Single Product (Post)</h2>
+      <h2> Product (Detail)</h2>
       <h3>{post.title}</h3>
       <p>{post.body}</p>
       <p>
@@ -26,4 +26,4 @@ function SinglePost({ id = 1 }) {
   );
 }
 
-export default SinglePost;
+export default productdetail;
